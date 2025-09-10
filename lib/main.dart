@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 import 'screens/login_screen.dart';
+import 'screens/offer_ride_screen.dart';
+import 'screens/CompleteProfileScreen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 Future<void> main() async {
@@ -28,6 +30,9 @@ class MyApp extends StatelessWidget {
       home: AuthScreen(), // Set AuthScreen as the initial screen
       routes: {
         '/home': (context) => const HomeScreen(), // Define your home route
+        '/complete-profile': (context) => CompleteProfileScreen(),
+        '/offer_ride_screen': (context) => OfferRideMainScreen(),
+        '/login-screen': (context) => AuthScreen(),
       },
     );
   }
